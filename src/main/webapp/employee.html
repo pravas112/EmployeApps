@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!-- Title shown in browser tab -->
+<title>Employee Form</title>
+
+<style>
+
+/* Styling for complete webpage background */
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+
+    /* Gradient background color */
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+
+    /* Center the form vertically and horizontally */
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main form container box */
+.container{
+    width:420px;
+    background:white;
+    padding:30px;
+
+    /* Rounded corners */
+    border-radius:15px;
+
+    /* Shadow effect */
+    box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+}
+
+/* Heading styling */
+h2{
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:20px;
+}
+
+/* Table full width */
+table{
+    width:100%;
+}
+
+/* Space between rows */
+td{
+    padding:10px;
+}
+
+/* Input box and dropdown styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+
+    width:100%;
+    padding:10px;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+    /* Smooth effect */
+    transition:0.3s;
+}
+
+/* Focus effect when clicking input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+
+    border-color:#00b4d8;
+    box-shadow:0px 0px 8px #90e0ef;
+}
+
+/* Gender text styling */
+.gender{
+    color:#333;
+    font-size:15px;
+}
+
+/* Submit button styling */
+input[type="submit"]{
+
+    width:100%;
+    padding:12px;
+
+    /* Gradient button color */
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+
+    color:white;
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* Hover effect for button */
+input[type="submit"]:hover{
+
+    background: linear-gradient(to right, #023e8a, #0096c7);
+
+    /* Slight zoom effect */
+    transform:scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Main container starts -->
+<div class="container">
+
+<!-- Form heading -->
+<h2>Employee Registration Form</h2>
+
+<!-- Form starts -->
+<form action="save" method="post">
+
+<table>
+
+<!-- Employee ID -->
+<tr>
+    <td>Enter ID:</td>
+    <td>
+        <input type="text" placeholder="Enter ID" name="id" required>
+    </td>
+</tr>
+
+<!-- Employee Name -->
+<tr>
+    <td>Enter Name:</td>
+    <td>
+        <input type="text" placeholder="Enter Name" name="name" required>
+    </td>
+</tr>
+
+<!-- Employee Email -->
+<tr>
+    <td>Enter Email:</td>
+    <td>
+        <input type="email" placeholder="Enter Email" name="email" required>
+    </td>
+</tr>
+
+<!-- Employee Password -->
+<tr>
+    <td>Enter Password:</td>
+    <td>
+        <input type="password" placeholder="Enter Password" name="password" required>
+    </td>
+</tr>
+
+<!-- Gender Selection -->
+<tr>
+    <td>Choose Gender:</td>
+
+    <td class="gender">
+
+        <input type="radio" name="gender" value="Male" required> Male
+
+        <input type="radio" name="gender" value="Female"> Female
+
+    </td>
+</tr>
+
+<!-- City Dropdown -->
+<tr>
+    <td>Choose City:</td>
+
+    <td>
+
+        <select name="city" required>
+
+            <option value="">--Select City--</option>
+
+            <option value="Pune">Pune</option>
+
+            <option value="Bengaluru">Bengaluru</option>
+
+            <option value="Maharashtra">Maharashtra</option>
+
+            <option value="Delhi">Delhi</option>
+
+        </select>
+
+    </td>
+</tr>
+
+<!-- Submit Button -->
+<tr>
+    <td colspan="2" align="center">
+
+        <input type="submit" value="Save Employee">
+
+    </td>
+</tr>
+
+</table>
+
+</form>
+<!-- Form ends -->
+
+</div>
+<!-- Main container ends -->
+
+</body>
+</html>
