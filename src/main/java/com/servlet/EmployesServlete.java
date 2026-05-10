@@ -1,9 +1,10 @@
 package com.servlet;
 
 import java.io.IOException;
-import java.net.http.HttpRequest;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+
+import com.servlet.dao.EmployeeeDao;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -21,9 +22,9 @@ public class EmployesServlete extends HttpServlet{
 		String name = req.getParameter("name");
 		String password = req.getParameter("password");
 		String email = req.getParameter("email");
-		String city = req.getParameter("city");
-		String gender = req.getParameter("gender");
-		
+		String city = req.getParameter("gender");
+		String gender = req.getParameter("city");
+		 
 		
 		Connection dbConnection = EmployeeeDao.createDBConnection();
 		

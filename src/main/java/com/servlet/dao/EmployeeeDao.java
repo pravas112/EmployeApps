@@ -1,4 +1,4 @@
-package com.servlet;
+package com.servlet.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
