@@ -47,6 +47,7 @@ public class Loginservlet extends HttpServlet {
 			    employee.setGender(rs.getString("gender"));
 			    employee.setCity(rs.getString("city"));
 				
+			    req.setAttribute("Name", rs.getString("name"));
 			}
 			  req.setAttribute("employee",employee);
 			if(status) {
@@ -54,8 +55,9 @@ public class Loginservlet extends HttpServlet {
 				req.getRequestDispatcher("displayemp.jsp").forward(req, resp);
 			}
 			else {
-				resp.getWriter().print("<h2 style= 'color:red; font-weight:800'>invalid email and password</h2>");
-				req.getRequestDispatcher("Login.html").include(req, resp);
+				req.setAttribute("msg", "Invalid email or password");
+				//resp.getWriter().print("<h2 style= 'color:red; font-weight:800'>invalid email and password</h2>");
+				req.getRequestDispatcher("Login.jsp").include(req, resp);
 			}
 			
 			  

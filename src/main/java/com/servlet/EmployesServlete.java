@@ -22,8 +22,8 @@ public class EmployesServlete extends HttpServlet{
 		String name = req.getParameter("name");
 		String password = req.getParameter("password");
 		String email = req.getParameter("email");
-		String city = req.getParameter("gender");
-		String gender = req.getParameter("city");
+		String gender = req.getParameter("gender");
+		String city = req.getParameter("city");
 		 
 		
 		Connection dbConnection = EmployeeeDao.createDBConnection();
