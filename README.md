@@ -43,3 +43,16 @@ MySQL database is used to store employee records.
 ## 👨‍💻 Developed By
 
 Prabhash
+
+## Today's Updates
+
+- Added Employee Login Functionality
+- Connected Login Form with MySQL Database
+- Implemented Login Validation using Servlet and JDBC
+- Displayed Employee Details after Successful Login
+- Fixed Gender and City Data Mapping Issues
+- Improved Employee Details Page UI using CSS
+- Added Gradient Background and Responsive Table Design
+- Fixed JSTL Tag Library Issues in JSP
+- Cleaned Null and Empty Records from MySQL Database
+- Performed Database Testing and Debugging
